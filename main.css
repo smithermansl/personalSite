@@ -1,0 +1,41 @@
+body {
+  /* background-color: pink; */
+}
+
+#main {
+  margin: 0 auto;
+  width: 1000px;
+  /* background-color: pink; */
+  position: relative;
+  top: 150px;
+}
+
+h1 {
+  line-height: .8em;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+nav {
+  padding: 15px 50px 0 0;
+  height: 50px;
+}
+
+nav img {
+  width: 30px;
+  height: 30px;
+  float: right;
+  margin: 0 0 0 30px;
+}
+
+.section {
+  position: relative;
+  top: 400px;
+}
+
+.offset {
+  position: relative;
+  left: 50px;
+}
