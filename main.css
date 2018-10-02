@@ -1,5 +1,6 @@
 body {
   /* background-color: pink; */
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #main {
@@ -14,10 +15,6 @@ h1 {
   line-height: .8em;
 }
 
-h4 {
-  text-transform: uppercase;
-}
-
 nav {
   padding: 15px 50px 0 0;
   height: 50px;
@@ -30,12 +27,38 @@ nav img {
   margin: 0 0 0 30px;
 }
 
-.section {
-  position: relative;
-  top: 400px;
+#first {
+  margin-top: 350px;
 }
 
-.offset {
+.section {
+  margin-top: 200px;
   position: relative;
-  left: 50px;
+  left: 150px;
+  max-width: 750px;
+  display: flex;
+  justify-content: left;
+}
+
+.sectionHeader {
+  float: left;
+  min-width: 150px;
+  margin-right: 50px;
+  text-align: right;
+}
+
+.sectionHeader h4 {
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: .1em;
+}
+
+.sectionContent {
+  float: right;
+  margin-top: 5px;
+}
+
+.sectionContent p {
+  font-size: 1em;
+  line-height: 1.2em;
 }
