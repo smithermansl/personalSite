@@ -1,14 +1,12 @@
 body {
-  /* background-color: pink; */
   font-family: Arial, Helvetica, sans-serif;
 }
 
 #main {
   margin: 0 auto;
   width: 1000px;
-  /* background-color: pink; */
   position: relative;
-  top: 150px;
+  top: 50px;
 }
 
 h1 {
@@ -28,37 +26,81 @@ nav img {
 }
 
 #first {
-  margin-top: 350px;
+  margin-top: 250px;
 }
 
 .section {
-  margin-top: 200px;
-  position: relative;
-  left: 150px;
-  max-width: 750px;
+  max-width: 850px;
   display: flex;
   justify-content: left;
+  padding: 100px 10%;
 }
 
 .sectionHeader {
   float: left;
   min-width: 150px;
-  margin-right: 50px;
+  margin-right: 60px;
   text-align: right;
-}
-
-.sectionHeader h4 {
   text-transform: uppercase;
   font-size: 1em;
   letter-spacing: .1em;
+  font-weight: 600;
+  color: #FF6839;
 }
 
 .sectionContent {
   float: right;
-  margin-top: 5px;
+  width: 80%;
 }
 
 .sectionContent p {
   font-size: 1em;
   line-height: 1.2em;
+  margin: 0 0 20px 0;
 }
+
+#skills {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill_label {
+  text-transform: uppercase;
+  font-size: 1em;
+  padding-bottom: 5px;
+  font-weight: 600;
+}
+
+.skill_category ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skill_category li {
+  padding-bottom: 5px;
+}
+
+.experience {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.experience_label {
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+/* .experience_dates {
+  italicize?
+} */
+
+/*
+
+#FF6839 - ORANGE
+#0C0A1E - V. DARK PURPLE
+#EDEAD9 - CREAM
+#D58E53 - TAN
+
+*/
