@@ -1,21 +1,20 @@
 body {
-  /* background-color: pink; */
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #0C0A1E;
 }
 
 #main {
   margin: 0 auto;
-  width: 1000px;
-  /* background-color: pink; */
+  max-width: 1000px;
   position: relative;
-  top: 150px;
+  top: 80px;
+  /* background-color: pink; */
 }
 
 h1 {
   line-height: .8em;
-}
-
-h4 {
-  text-transform: uppercase;
 }
 
 nav {
@@ -30,12 +29,141 @@ nav img {
   margin: 0 0 0 30px;
 }
 
-.section {
-  position: relative;
-  top: 400px;
+#intro {
+  height: 90vh;
 }
 
-.offset {
-  position: relative;
-  left: 50px;
+.section {
+  max-width: 950px;
+  display: flex;
+  justify-content: left;
+  padding: 100px 0 100px 15%;
+  /* background-color: tan; */
 }
+
+.sectionHeader {
+  float: left;
+  min-width: 150px;
+  margin-right: 60px;
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: .1em;
+  font-weight: 600;
+  color: #FF6839;
+}
+
+.sectionContent {
+  float: right;
+  width: 80%;
+}
+
+.sectionContent p {
+  font-size: 1em;
+  line-height: 1.2em;
+  margin: 0 0 20px 0;
+}
+
+#skills {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill_label {
+  text-transform: uppercase;
+  font-size: 1em;
+  padding-bottom: 5px;
+  font-weight: 600;
+}
+
+.skill_category ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skill_category li {
+  padding-bottom: 5px;
+}
+
+.experience {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.experience_label {
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+.experience_dates {
+  text-transform: uppercase;
+  font-size: 9pt;
+  color: #A0A0A0;
+}
+
+.project {
+  margin-bottom: 200px;
+  /* background-color: pink; */
+}
+
+#last_project {
+  margin-bottom: 0px;
+}
+
+.project img {
+  float: left;
+  width: 450px;
+}
+
+.project_details {
+  overflow: hidden;
+  padding-left: 40px;
+  /* background-color: lightcyan; */
+}
+
+.project_details h4 {
+  margin-top: 0px;
+}
+
+.tech_used {
+  clear: both;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  /* background-color: pink; */
+  width: 450px;
+}
+
+.tech_used ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tech_used li {
+  display: inline;
+  margin-right: 15px;
+  text-transform: uppercase;
+  font-size: 9pt;
+  color: #A0A0A0;
+}
+
+footer {
+  background-color: #0C0A1E;
+  width: 100%;
+  height: 300px;
+  position: relative;
+  bottom: 0;
+  margin-top: 100px;
+}
+
+
+/*
+
+#FF6839 - ORANGE
+#0C0A1E - V. DARK PURPLE
+#EDEAD9 - CREAM
+#D58E53 - TAN
+
+*/
