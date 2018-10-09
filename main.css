@@ -26,14 +26,16 @@ nav img {
   margin: 0 0 0 30px;
 }
 
-#backToTop {
-  position: fixed;
+.fixed {
   bottom: 30px;
   right: 50px;
+  position: fixed;
 }
 
-.hidden {
-  display: none;
+.relative {
+  bottom: 30px;
+  left: 1150px;
+  position: relative;
 }
 
 .icon {
