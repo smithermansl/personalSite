@@ -9,11 +9,12 @@
 </head>
 <body>
   <nav>
-    <img src="images/placeholder_icon.png"/>
-    <img src="images/placeholder_icon.png"/>
-    <img src="images/placeholder_icon.png"/>
-    <img src="images/placeholder_icon.png"/>
+    <img src="images/placeholder_icon.png" class="icon"/>
+    <img src="images/placeholder_icon.png" class="icon"/>
+    <img src="images/placeholder_icon.png" class="icon"/>
+    <img src="images/placeholder_icon.png" class="icon"/>
   </nav>
+  <div id="backToTop"><img src="images/upArrow.png" class="icon"/></div>
   <div id="main">
     <div id="intro">
       <img src="images/Shelby_logo.png"/>
@@ -21,7 +22,7 @@
       <h1>&& designer.</h1>
     </div>
 
-    <div class="section">
+    <div class="section" id="background">
         <div class="sectionHeader">Background</div>
       <div class="sectionContent">
 
@@ -79,10 +80,13 @@
       <div class="sectionHeader">Projects</div>
       <div class="sectionContent">
           <div class="project">
-            <img src="images/yosemite.jpg"/>
+            <img src="images/yosemite.jpg" class="project_img"/>
             <div class="project_details">
               <h4>Ariadne.ai</h4>
               <p>Mobile and web application for creating and playing digital versions of mazes either drawn by hand or created with everyday objects.</p>
+              <a href="http://ariadne-ai.herokuapp.com" target="_blank">
+                <img src="images/newWindow.png" class="icon"/>
+              </a>
             </div>
             <div class="tech_used">
                 <ul>
@@ -101,10 +105,11 @@
           </div>
 
           <div class="project">
-            <img src="images/yosemite.jpg"/>
+            <img src="images/Getaway.png" class="project_img"/>
             <div class="project_details">
               <h4>Getaway</h4>
               <p>Virtual reality application for escaping everyday life in a virtual environment tailored to your mood and preferences.</p>
+              <img src="images/newWindow.png" class="icon"/>
             </div>
             <div class="tech_used">
                 <ul>
@@ -118,10 +123,13 @@
           </div>
   
             <div class="project" id="last_project">
-              <img src="images/yosemite.jpg"/>
+              <img src="images/OTO.png" class="project_img"/>
               <div class="project_details">
                 <h4>Oregon Trail Outfitters</h4>
                 <p>E-commerce web application selling old west survival supplies.</p>
+                <a href="http://oregon-trail-outfitters.herokuapp.com" target="_blank">
+                  <img src="images/newWindow.png" class="icon"/>
+                </a>
               </div>
               <div class="tech_used">
                 <ul>
@@ -177,5 +185,7 @@
   <footer>
     
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
