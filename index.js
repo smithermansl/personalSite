@@ -1,32 +1,14 @@
-$(document).ready(() => {
-  
-  let upArrow = $('#backToTop')
+'use strict'
 
-  upArrow.hide().addClass('fixed')
-  let backgroundSectionTop = $('#background').offset().top
+const express = require('express')
+const app = express()
+const path = require('path')
+const PORT = 8888
 
-  $(window).scroll(() => {
-    if($(window).scrollTop() >= backgroundSectionTop) {
-      upArrow.show()
-    }
+app.use(express.static(path.join(__dirname, './public')))
 
-    if($(window).scrollTop() < backgroundSectionTop) {
-      upArrow.hide()
-    }
-
-    let footerSectionTop = $('footer').offset().top
-  
-    if($(window).scrollTop() + $(window).height() >= footerSectionTop) {
-      upArrow.removeClass('fixed').addClass('relative')
-    }
-
-    if($(window).scrollTop() + $(window).height() < footerSectionTop) {
-      upArrow.removeClass('relative').addClass('fixed')
-    }
-  })
-
-  upArrow.click(() => {
-    $('html, body').animate({ scrollTop: 0}, 300)
-  })
-
+app.listen(PORT, () => {
+  console.log(`Listening on port ${PORT}`)
 })
+
+module.exports = app
