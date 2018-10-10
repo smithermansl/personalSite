@@ -193,13 +193,19 @@
   </div>
   
   <footer>
-    <form id="contactform" method="POST" action="https://formspree.io/smithermansl@gmail.com">
-      <input type="text" placeholder="Your name" name="name">
-      <input type="email" placeholder="Your email" name="_replyto">
-      <input type="text" name="_gotcha" style="display:none" />
-      <textarea placeholder="Your message" name="message"></textarea>
-      <input type="submit" value="Send" name="submit">
-    </form>
+    <div id="footer_container">
+      <img src="images/me.jpg"/>
+      <div id="contact_container">
+        <h2>Drop me a line.</h2>
+        <form id="contactform" method="POST" action="https://formspree.io/smithermansl@gmail.com">
+          <input type="text" placeholder="Your name" name="name">
+          <input type="email" placeholder="Your email" name="_replyto">
+          <input type="text" name="_gotcha" style="display:none" />
+          <textarea placeholder="Your message" name="message"></textarea>
+          <button type="submit" value="Send" name="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script type="text/javascript" src="backToTop.js"></script>
