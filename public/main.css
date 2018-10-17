@@ -13,7 +13,7 @@ body {
 }
 
 h1 {
-  line-height: .8em;
+  line-height: 1.2em;
 }
 
 nav {
@@ -46,7 +46,7 @@ nav img {
 
 #intro {
   height: 90vh;
-  background-color: honeydew;
+  /* background-color: honeydew; */
 }
 
 .section {
@@ -54,7 +54,7 @@ nav img {
   display: flex;
   justify-content: left;
   padding: 100px 0 100px 15%;
-  background-color: lightblue;
+  /* background-color: lightblue; */
 }
 
 .sectionHeader {
@@ -67,13 +67,13 @@ nav img {
   letter-spacing: .1em;
   font-weight: 600;
   color: #FF6839;
-  background-color: lightpink;
+  /* background-color: lightpink; */
 }
 
 .sectionContent {
   float: right;
   width: 80%;
-  background-color: palegoldenrod;
+  /* background-color: palegoldenrod; */
 }
 
 .sectionContent p {
@@ -225,7 +225,92 @@ footer button {
     padding-left: 0;
     max-width: 400px;
   }
+
+  .project_img {
+    padding-bottom: 20px;
+  }
 }
+
+
+
+/* 850 PX WIDTH SCREEN */
+
+@media screen and (max-width: 850px) {
+  #main {
+    max-width: 650px;
+  }
+
+  .section {
+    padding-left: 0px;
+  }
+
+  .sectionHeader {
+    margin-right: 30px;
+  }
+
+  .project_img {
+    width: 100%;
+  }
+
+  #footer_container {
+    max-width: 650px;
+    justify-content: space-between;
+  }
+
+  #footer_container img {
+    width: 50%;
+    height: 50%;
+  }
+
+  #contact_container {
+    width: 350px;
+    margin-left: 20px;
+  }
+}
+
+
+
+/* 700 PX WIDTH SCREEN */
+
+@media screen and (max-width: 700px) {
+  #main {
+    width: 85vw;
+  }
+
+  .section {
+    flex-direction: column;
+    /* padding-left: 50px; */
+  }
+
+  .sectionHeader {
+    position: static;
+    text-align: left;
+    height: 50px;
+  }
+
+  .sectionContent {
+    padding-left: 50px;
+    width: 65vw;
+  }
+
+  .experience_details {
+    width: 150px;
+  }
+
+  #skills {
+    flex-flow: row wrap;
+  }
+
+  .skill_category {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+
+  .tech_used {
+    width: 65vw;
+  }
+}
+
 
 
 /*
