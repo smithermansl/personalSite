@@ -178,7 +178,7 @@ footer {
   width: 1000px;
   display: flex;
   justify-content: space-around;
-  background-color: honeydew;
+  /* background-color: honeydew; */
 }
 
 h2 {
@@ -308,6 +308,25 @@ footer button {
 
   .tech_used {
     width: 65vw;
+  }
+
+  #footer_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #footer_container img {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  #contact_container {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #contact_container h2 {
+    font-size: 2em;
   }
 }
 
