@@ -46,6 +46,7 @@ nav img {
 
 #intro {
   height: 90vh;
+  background-color: honeydew;
 }
 
 .section {
@@ -53,6 +54,7 @@ nav img {
   display: flex;
   justify-content: left;
   padding: 100px 0 100px 15%;
+  background-color: lightblue;
 }
 
 .sectionHeader {
@@ -65,11 +67,13 @@ nav img {
   letter-spacing: .1em;
   font-weight: 600;
   color: #FF6839;
+  background-color: lightpink;
 }
 
 .sectionContent {
   float: right;
   width: 80%;
+  background-color: palegoldenrod;
 }
 
 .sectionContent p {
@@ -174,11 +178,13 @@ footer {
   width: 1000px;
   display: flex;
   justify-content: space-around;
+  background-color: honeydew;
 }
 
 h2 {
-  color: #D58E53;
+  color: #FF6839;
   font-size: 1.6em;
+  letter-spacing: .025em;
 }
 
 footer input, textarea {
@@ -193,6 +199,32 @@ footer button {
 
 #contact_container {
   width: 300px;
+}
+
+
+
+/* 1100 PX WIDTH SCREEN */
+
+@media screen and (max-width: 1100px) {
+  #main {
+    max-width: 800px;
+  }
+
+  #footer_container {
+    max-width: 800px;
+    justify-content: space-between;
+  }
+
+  #contact_container {
+    width: 350px;
+    margin-left: 80px;
+  }
+
+  .project_details {
+    overflow: initial;
+    padding-left: 0;
+    max-width: 400px;
+  }
 }
 
 
