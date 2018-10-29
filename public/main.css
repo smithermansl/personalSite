@@ -48,6 +48,10 @@ nav img {
   height: 90vh;
 }
 
+#intro_text {
+  max-width: 550px;
+}
+
 .section {
   max-width: 950px;
   display: flex;

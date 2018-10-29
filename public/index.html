@@ -17,7 +17,9 @@
   <div id="main">
     <div id="intro">
       <img src="images/Shelby_logo.png"/>
-      <h1>I'm a full stack software engineer && designer.</h1>
+      <div id="intro_text">
+        <h1>I'm a full stack software engineer && designer.</h1>
+      </div>
     </div>
 
     <div class="section" id="background">
@@ -196,13 +198,26 @@
       <img src="images/me.jpg"/>
       <div id="contact_container">
         <h2>Drop me a line.</h2>
-        <form id="contactform" method="POST" action="https://formspree.io/smithermansl@gmail.com">
+        <form method="POST" action="/contact">
+          <input type="text" name="name" placeholder="Name">
+          
+          <input type="text" name="email" placeholder="Email">
+
+          <input type="text" name="subject" placeholder="Subject">
+
+          <input type="text" name="message" placeholder="Your message here...">
+
+          <button type="submit">Submit</button>
+        </form>
+
+        <!-- <form id="contactform" method="POST" action="https://formspree.io/smithermansl@gmail.com">
           <input type="text" placeholder="Your name" name="name">
           <input type="email" placeholder="Your email" name="_replyto">
           <input type="text" name="_gotcha" style="display:none" />
           <textarea placeholder="Your message" name="message"></textarea>
           <button type="submit" value="Send" name="submit">Submit</button>
-        </form>
+        </form> -->
+
       </div>
     </div>
   </footer>
