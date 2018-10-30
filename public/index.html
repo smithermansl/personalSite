@@ -23,8 +23,8 @@
     </div>
 
     <div class="section" id="background">
-        <div class="sectionHeader">Background</div>
-      <div class="sectionContent">
+        <div class="section_header">Background</div>
+      <div class="section_content">
 
         <p>As a design student, I learned to emphasize attention to detail and intuitive user experiences, add more things at the end of this sentence... But in web design courses was where I truly thrived, and became cognizant of my enthusiasm and knack for bringing my designs to fruition.</p>
         <p>I felt limited using only HTML, CSS, and basic JavaScript. I began learning more advanced JS concepts and solving complex problems, eventually applying to and attending the Grace Hopper software engineering immersive at Fullstack Academy.</p>
@@ -33,8 +33,8 @@
     </div>
 
     <div class="section">
-      <div class="sectionHeader">Skills</div>
-      <div class="sectionContent" id="skills">
+      <div class="section_header">Skills</div>
+      <div class="section_content" id="skills">
         <div class="skill_category">
           <div class="skill_label">Languages</div>
           <ul>
@@ -77,8 +77,8 @@
     </div>
 
     <div class="section">
-      <div class="sectionHeader">Projects</div>
-      <div class="sectionContent">
+      <div class="section_header">Projects</div>
+      <div class="section_content">
           <div class="project">
             <img src="images/yosemite.jpg" class="project_img"/>
             <div class="project_details">
@@ -147,8 +147,8 @@
       </div>
 
     <div class="section">
-      <div class="sectionHeader">Experience</div>
-      <div class="sectionContent">
+      <div class="section_header">Experience</div>
+      <div class="section_content">
           <div class="experience">
             <div class="experience_details">
               <div class="experience_label">Grace Hopper</div>
@@ -173,14 +173,6 @@
             <div class="experience_dates">Jan 2017 - Apr 2018</div>
           </div>
 
-          <!-- <div class="experience">
-            <div class="experience_details">
-              <div class="experience_label">Freelance Design</div>
-              <p>Small Business Designer</p>
-            </div>
-            <div class="experience_dates">Jun 2016 - Jul 2017</div>
-          </div> -->
-
           <div class="experience">
             <div class="experience_details">
               <div class="experience_label">Texas State University</div>
@@ -192,36 +184,42 @@
     </div>
     <img src="images/upArrow.png" class="icon" id="backToTop"/>
   </div>
-  
+
   <footer>
     <div id="footer_container">
       <img src="images/me.jpg"/>
-      <div id="contact_container">
+      <div id="initial_contact" class="contact_container">
         <h2>Drop me a line.</h2>
-        <form method="POST" action="/contact">
+        <form method="POST" action="submitForm.js" name="emailForm" id="emailForm">
           <input type="text" name="name" placeholder="Name">
-          
           <input type="text" name="email" placeholder="Email">
-
           <input type="text" name="subject" placeholder="Subject">
-
           <input type="text" name="message" placeholder="Your message here...">
-
           <button type="submit">Submit</button>
         </form>
+      </div>
 
-        <!-- <form id="contactform" method="POST" action="https://formspree.io/smithermansl@gmail.com">
-          <input type="text" placeholder="Your name" name="name">
-          <input type="email" placeholder="Your email" name="_replyto">
-          <input type="text" name="_gotcha" style="display:none" />
-          <textarea placeholder="Your message" name="message"></textarea>
-          <button type="submit" value="Send" name="submit">Submit</button>
-        </form> -->
+      <div id="email_success" class="contact_container hidden">
+        <h2>Thanks for the message!</h2>
+        <p>I'll be in contact soon.</p>
+      </div>
 
+      <div id="email_failure" class="contact_container hidden">
+        <h2>Something went wrong.</h2>
+        <p>Please try again.</p>
+        <form method="POST" action="submitForm.js" name="emailForm" id="emailForm">
+          <input type="text" name="name" placeholder="Name">
+          <input type="text" name="email" placeholder="Email">
+          <input type="text" name="subject" placeholder="Subject">
+          <input type="text" name="message" placeholder="Your message here...">
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </div>
   </footer>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script type="text/javascript" src="backToTop.js"></script>
+  <script src="submitForm.js"></script>
 </body>
 </html>
