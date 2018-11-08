@@ -36,14 +36,14 @@ nav img {
 
 .fixed {
   bottom: 30px;
-  right: 60px;
+  left: 95vw;
   position: fixed;
 }
 
 .relative {
-  bottom: 30px;
-  left: 1050px;
   position: relative;
+  top: -100px;
+  left: 95vw;
 }
 
 .icon {
@@ -215,6 +215,15 @@ footer button {
   color: #EDEAD9;
 }
 
+#emailForm input {
+  border-radius: 2px;
+  padding-left: 5px;
+  height: 20px;
+}
+
+#footer_container img {
+  border-radius: 2px;
+}
 
 
 /* 1100 PX WIDTH SCREEN */
@@ -258,7 +267,7 @@ footer button {
     padding-left: 0px;
   }
 
-  .sectionHeader {
+  .section_header {
     margin-right: 30px;
   }
 
@@ -280,6 +289,14 @@ footer button {
     width: 350px;
     margin-left: 20px;
   }
+
+  .fixed {
+    left: 85vw;
+  }
+  
+  .relative {
+    left: 85vw;
+  }
 }
 
 
@@ -291,18 +308,22 @@ footer button {
     width: 85vw;
   }
 
+  nav {
+    padding-right: 25px;
+  }
+
   .section {
     flex-direction: column;
   }
 
-  .sectionHeader {
+  .section_header {
     position: static;
     text-align: left;
     height: 50px;
   }
 
-  .sectionContent {
-    padding-left: 50px;
+  .section_content {
+    padding-left: 30px;
     width: 65vw;
   }
 
@@ -313,6 +334,7 @@ footer button {
 
   #skills {
     flex-flow: row wrap;
+    width: 80vw;
   }
 
   .skill_category {
@@ -322,10 +344,6 @@ footer button {
 
   .tech_used {
     width: 65vw;
-  }
-
-  #contactform input, textarea {
-    border-radius: 5px;
   }
 
   #footer_container {
