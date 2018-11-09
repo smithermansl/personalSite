@@ -41,6 +41,14 @@ nav i {
   margin: 0 0 0 30px;
 }
 
+nav a {
+  color: #FF6839;
+}
+
+nav a:hover {
+  color: #FF6839;
+}
+
 .fixed {
   bottom: 30px;
   left: 95vw;
@@ -251,6 +259,18 @@ footer button {
   border-radius: 2px;
 }
 
+#props {
+  margin: 50px 0 0 20px;
+}
+
+#props p {
+  font-size: .8em;
+  color: #4C3D68;
+  font-weight: 300;
+  letter-spacing: .09em;
+  margin: 2px 0 2px 0;
+}
+
 
 /* 1100 PX WIDTH SCREEN */
 
@@ -317,11 +337,11 @@ footer button {
   }
 
   .fixed {
-    left: 85vw;
+    left: 90vw;
   }
   
   .relative {
-    left: 85vw;
+    left: 90vw;
   }
 }
 
