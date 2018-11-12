@@ -12,8 +12,8 @@ if (process.env.NODE_ENV !== 'production') require('./secrets')
 const mailer = require('nodemailer').createTransport({
   service: 'Gmail',
   auth: {
-    user: process.env.GMAIL_ADDRESS,
-    pass: process.env.GMAIL_PASSWORD
+    user: process.env.LOCATION,
+    pass: process.env.USER_SECRET
   }
 })
 
@@ -32,7 +32,7 @@ app.post('/contact', (req, res) => {
   Message: ${req.body.message}`
 
   mailer.sendMail({
-    to: [process.env.GMAIL_ADDRESS],
+    to: [process.env.LOCATION],
     subject: req.body.subject || '[No Subject]',
     html: newBody || '[No Message]'
   }, (err, info) => {
