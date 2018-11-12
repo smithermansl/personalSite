@@ -18,7 +18,7 @@ body {
   margin: 0 auto;
   max-width: 1000px;
   position: relative;
-  top: 80px;
+  top: 180px;
 }
 
 h1 {
@@ -270,7 +270,7 @@ footer button {
 
 #props p {
   font-size: .8em;
-  color: #4C3D68;
+  color: #706584;  
   font-weight: 300;
   letter-spacing: .09em;
   margin: 2px 0 2px 0;
@@ -357,6 +357,11 @@ footer button {
 @media screen and (max-width: 700px) {
   #main {
     width: 85vw;
+  }
+
+  #intro img {
+    width: 85vw;
+    margin-bottom: 25px;
   }
 
   nav {
