@@ -216,12 +216,13 @@
       <img src="images/me.jpg"/>
       <div id="initial_contact" class="contact_container">
         <h2>Drop me a line.</h2>
-        <form method="POST" action="submitForm.js" name="emailForm" id="emailForm">
+        <form id="emailForm" name="emailForm" action="submitForm.js" method="POST">
           <input type="text" name="name" placeholder="Name">
-          <input type="text" name="email" placeholder="Email">
-          <input type="text" name="subject" placeholder="Subject">
-          <input type="text" name="message" placeholder="Your message here...">
-          <button type="submit">Submit</button>
+          <input type="email" name="_replyto" placeholder="Email">
+          <input type="text" name="message" placeholder="Message">
+          <input type="hidden" name="_subject" value="Website contact" />
+          <input type="text" name="_gotcha" style="display:none" />
+          <button type="submit" value="Send">Submit</button>
         </form>
       </div>
 
@@ -233,12 +234,13 @@
       <div id="email_failure" class="contact_container hidden">
         <h2>Something went wrong.</h2>
         <p>Please try again.</p>
-        <form method="POST" action="submitForm.js" name="emailForm" id="emailForm">
+        <form id="emailForm" name="emailForm" action="//formspree.io/smithermansl@gmail.com" method="POST">
           <input type="text" name="name" placeholder="Name">
-          <input type="text" name="email" placeholder="Email">
-          <input type="text" name="subject" placeholder="Subject">
-          <input type="text" name="message" placeholder="Your message here...">
-          <button type="submit">Submit</button>
+          <input type="email" name="_replyto" placeholder="Email">
+          <input type="text" name="message" placeholder="Message">
+          <input type="hidden" name="_subject" value="Website contact" />
+          <input type="text" name="_gotcha" style="display:none" />
+          <button type="submit" value="Send">Submit</button>
         </form>
       </div>
     </div>
